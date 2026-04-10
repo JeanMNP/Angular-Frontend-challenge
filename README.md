@@ -1,59 +1,53 @@
-# AngularFrontendChallenge
+# Angular Frontend Challenge
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.6.
+Este projeto é um desafio de frontend utilizando **Angular** e **Angular Material**, com foco em criar uma aplicação de listagem e cadastro de usuários.
 
-## Development server
+## 📦 Tecnologias utilizadas
+- Angular 17+
+- Angular Material
+- RxJS
+- TypeScript
 
-To start a local development server, run:
+## 🚀 Instalação e execução
 
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Clone o repositório e instale as dependências:
 
 ```bash
-ng generate component component-name
-```
+git clone https://github.com/seuusuario/angular-frontend-challenge.git
+cd angular-frontend-challenge
+npm install
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Para rodar o projeto localmente:
+npm start
 
-```bash
-ng generate --help
-```
+📖 Funcionalidades
+Listagem de usuários com busca
 
-## Building
+Formulário de cadastro/edição com validações:
 
-To build the project run:
+Nome obrigatório
 
-```bash
-ng build
-```
+Email obrigatório e válido
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+CPF obrigatório
 
-## Running unit tests
+Telefone obrigatório
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Tipo de telefone obrigatório (celular, fixo, comercial)
 
-```bash
-ng test
-```
+Feedback visual de carregamento e erros
 
-## Running end-to-end tests
+Testes unitários para o serviço de usuários
 
-For end-to-end (e2e) testing, run:
+🛠️ Estrutura principal
+AppComponent: componente raiz que organiza a aplicação
 
-```bash
-ng e2e
-```
+UsersListComponent: lista usuários e permite busca
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+UserFormComponent: formulário para criar/editar usuários
 
-## Additional Resources
+UsersService: serviço responsável por listar e salvar usuários (mockado com dados locais)
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+✅ Testes
+npm test
+
