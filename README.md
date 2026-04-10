@@ -1,52 +1,59 @@
-# Angular Frontend Challenge
+# AngularFrontendChallenge
 
-Este projeto é um desafio de frontend utilizando **Angular** e **Angular Material**, com foco em criar uma aplicação de listagem e cadastro de usuários.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.6.
 
-## 📦 Tecnologias utilizadas
-- Angular 17+
-- Angular Material
-- RxJS
-- TypeScript
+## Development server
 
-## 🚀 Instalação e execução
-
-Clone o repositório e instale as dependências:
+To start a local development server, run:
 
 ```bash
-git clone https://github.com/seuusuario/angular-frontend-challenge.git
-cd angular-frontend-challenge
-npm install
-npm start
-📖 Funcionalidades
-Listagem de usuários com busca
+ng serve
+```
 
-Formulário de cadastro/edição com validações:
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-Nome obrigatório
+## Code scaffolding
 
-Email obrigatório e válido
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-CPF obrigatório
+```bash
+ng generate component component-name
+```
 
-Telefone obrigatório
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-Tipo de telefone obrigatório (celular, fixo, comercial)
+```bash
+ng generate --help
+```
 
-Feedback visual de carregamento e erros
+## Building
 
-Testes unitários para o serviço de usuários
+To build the project run:
 
-🛠️ Estrutura principal
-AppComponent: componente raiz que organiza a aplicação
+```bash
+ng build
+```
 
-UsersListComponent: lista usuários e permite busca
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-UserFormComponent: formulário para criar/editar usuários
+## Running unit tests
 
-UsersService: serviço responsável por listar e salvar usuários (mockado com dados locais)
+To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
 
-✅ Testes
-Os testes foram implementados com Jest. Para rodar:
+```bash
+ng test
+```
 
-bash
-npm test
+## Running end-to-end tests
+
+For end-to-end (e2e) testing, run:
+
+```bash
+ng e2e
+```
+
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

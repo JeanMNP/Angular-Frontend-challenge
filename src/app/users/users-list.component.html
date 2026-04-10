@@ -1,0 +1,14 @@
+<input (input)="onSearch($event.target.value)" placeholder="Buscar usuário" />
+
+<div *ngIf="loading()">Carregando...</div>
+<div *ngIf="error()">{{ error() }}</div>
+
+<div *ngFor="let user of users(); trackBy: trackById">
+  <mat-card>
+    <mat-card-title>{{ user.nome }}</mat-card-title>
+    <mat-card-subtitle>{{ user.email }}</mat-card-subtitle>
+    <button mat-button color="primary">Editar</button>
+  </mat-card>
+</div>
+
+<button mat-fab color="warn">+</button>
